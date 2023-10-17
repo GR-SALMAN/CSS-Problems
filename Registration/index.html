@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regsitration (GRS)</title>
+    <style>
+
+  body, .register, .underline {
+    background: linear-gradient(to bottom right, skyblue, rgb(197, 44, 211));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-stretch: narrower;
+  }
+        
+        
+
+        .registration-main{
+  
+            height: 540px;
+  
+            width: 668px;
+  
+            position: relative;
+  
+            background-color: white;
+  
+            margin: auto;
+            
+            margin-top: 20%;
+  
+            border-radius: 10px;
+        }
+
+
+        .underline{
+          background-color: #7d53df;
+    
+          margin-top: -43px;
+    
+          margin-left: 23px;
+    
+          width: 55px;
+          height: 3px;
+    
+          width: 37px;
+    
+          border-radius: 2px;
+        }
+        
+
+        .Reg{
+          text-align: left;
+    
+          padding: 3%;
+    
+          margin-top: -50px;
+
+          padding-left: 19px;
+        }
+
+        .registration-form{
+            display: flex;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .form-group input {
+  
+            width: 255px;
+    
+            padding: 11px;
+    
+            border: 3px solid #ccc;
+    
+            border-radius: 5px;
+        }
+
+        .container {
+  
+            display: flex;
+  
+            justify-content: space-between;
+  
+            background-color: #f2f2f2;
+  
+            padding: 20px;
+        }
+
+.left-list,
+.right-list {
+  flex-basis: 50%;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.radio-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-container {
+          display: inline-flex;
+    align-items: center;
+    margin-left: 58px;
+    margin-right: 20px;
+    text-wrap: nowrap; /*Pura text ke 1 line e anar jonno*/
+    font-size: larger;
+        }
+
+        .radio-container input[type="radio"] { /*Radio button ke boro korar jonno*/
+          transform: scale(1.5);
+    
+          margin-right: 12px;
+        }
+.prefer{
+   font-weight: bold;
+   padding-left: 0%;
+   padding-top: 0%;
+}
+
+.register{
+  color: aliceblue;
+    position: relative;
+    margin: 12px;
+    text-align: center;
+    /* padding-top: 0px; */
+    width: 644px;
+    height: 45px;
+    background-color: #7d53df;
+    border-radius: 9px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.register:hover{
+  background-color:#6c46c2;
+}
+
+</style>
+</head>
+<body>
+    <div class="registration-main">
+        <h1 class="Reg">Regsitration</h1>
+        <div class="underline"></div>
+        
+        <div class="container">
+            <div class="left-list">
+              <form>
+                <div class="form-group">
+                  <label for="name">Full Name:</label>
+                  <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required placeholder="Enter your email ">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+              </form>
+            </div>
+            <div class="right-list">
+              <form>
+                <div class="form-group">
+                  <label for="address">Username</label>
+                  <input type="text" id="Username" name="Username" required placeholder="Enter your Username ">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone number</label>
+                  <input type="text" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                  <label for="dob">Confirm Password</label>
+                  <input type="text" id="Confirm password" name="password" required placeholder="Confirm your password">
+                </div>
+              </form>
+            </div>
+          </div>
+        <h2 class="Reg">Gender</h2>
+        <div class="radio-container">
+          <input type="radio" id="option1" name="gender" value="male">
+          <label for="option1">Male</label>
+      </div>
+      
+      <div class="radio-container">
+          <input type="radio" id="option2" name="gender" value="female">
+          <label for="option2">Female</label>
+      </div>
+      <div class="radio-container">
+          <input type="radio" id="option3" name="gender" value="not-specified">
+          <label for="option2">Prefer not to say</label>
+      </div>
+
+      <div class="register">
+        <h2>Register</h2>
+      </div>
+
+    </div>
+    
+ </div>
+</body>
+</html>
