@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Morphism</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        body{
+            background-image: url("image\ for\ glass.jpg");
+            color: white;
+            font-family:'Open Sans', 'sans-serif';
+            font-weight: lighter;
+        }
+
+        h2{
+            position: absolute;
+    
+            margin: 0;
+    
+            margin-top: 26px;
+    
+            padding: 0;
+    
+            margin-left: 67px;
+        }
+
+        .container{
+            margin: auto;
+            
+            height: 450px;
+    
+            width: 350px;
+    
+            margin-top: 185px;
+            background: rgba( 255, 255, 255, 0.2 );
+
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+
+            backdrop-filter: blur( 2.5px );
+
+            -webkit-backdrop-filter: blur( 2.5px );
+
+            border-radius: 10px;
+
+            border: 1px solid rgba( 255, 255, 255, 0.18 )transparent;
+
+        }
+
+        .A{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 302px;
+            justify-content: space-between;
+            margin-top: 79px;
+        }
+        .form{
+            position: relative;
+    
+            margin: auto;
+    
+            display: flex;
+    
+            flex-direction: column;
+    
+            align-items: center;
+    
+            width: 100%;
+    
+            /* margin-inline: auto; */
+    
+            margin: 16px;
+    
+            /* padding-top: 0px; */
+    
+            margin-left: 25px;
+        }
+
+    
+        #email:focus,
+        #password:focus {
+            background: rgba(255, 255, 255, 0.2);
+            outline: none;
+        }
+
+        #log {
+            position: relative;
+            margin: auto;
+            margin-top: 23px;
+            height: 32px;
+            width: 74%;
+            padding: 7px 39px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            text-align: center;
+        /* padding-top: 0; */
+        /* padding-bottom: 0; */
+        padding-bottom: 9px;
+        padding-top: 12px;
+        font-size: larger;
+
+        }
+        #log:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        input{
+            background: rgba(255, 255, 255, 0.2);
+    color: white;
+    width: auto;
+    position: relative;
+    /* margin: auto; */
+    margin-top: 9px;
+    height: 36px;
+    width: 74%;
+    padding: 9px 39px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-bottom: 9px;
+    padding-top: 12px;
+    font-size: larger;
+        }
+
+        #email::placeholder,
+        #password::placeholder {
+            position: relative;
+            color: white;
+            padding-bottom: auto;
+            font-size: large;
+            font-weight: lighter;
+            font-family:'Open Sans', 'sans-serif';
+        }
+
+        .social-buttons {
+            margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -25px;
+    width: 285px;
+             }
+        
+
+        .social-button {
+            width: 45%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 6px;
+    padding-left: 19px;
+        }
+
+        .or{
+            position: relative;
+    
+            margin: 90px;
+    
+            text-align: center;
+    
+            padding-top: 310px;
+
+        }
+
+
+
+
+
+        .email{
+            position: relative;
+    
+            height: 21px;
+    
+            width: 18px;
+    
+            background-image: url(./user-solid.svg);
+    
+            margin-left: 33px;
+    
+            margin-top: -292px;
+    
+            size: auto;
+        }
+
+        .pass{
+            
+            position: relative;
+    
+            height: 21px;
+    
+            width: 18px;
+    
+            background-image: url(./lock-solid.svg);
+    
+            margin-left: 33px;
+    
+            margin-top: 62px;
+    
+            size: auto;
+        }
+
+        .fa-facebook-f{
+            position: absolute;
+    margin-top: 11px;
+    margin-left: 9px;
+}
+        
+
+        .fa-google{
+            position: absolute;
+    margin-top: 11px;
+    margin-left: 169px;
+        }
+
+        .fa-user{
+            position: absolute;
+    margin-left: 42px;
+    margin-top: -290px;
+        }
+
+        .fa-lock{
+position: absolute;
+    margin-top: -209px;
+    margin-left: 43px;
+}
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Foolish Developer</h2>
+        <div class="list A">
+            <form>
+              <div class="form">
+                
+                <input type="email" id="email" name="email" required placeholder="Email Id">
+              </div>
+              <div class="form">
+        
+                <input type="password" id="password" name="password" required placeholder ="Password">
+                <div id="log"> Log In</div>
+              </div>           
+            </form>
+        </div>
+
+        <div class="or">
+            <h2  style="color: yellow;">Or</h2>
+
+        </div>
+
+        <div class="social-buttons">
+            <button style="font-size: larger;" class="social-button facebook">Facebook</button>
+            <i class="fa-brands fa-facebook-f" style="color: #fcfcfc;"></i>
+            <button style="font-size: larger;" class="social-button google">Google</button>
+            <i class="fa-brands fa-google" style="color: #ffffff;"></i>
+        </div>
+
+        <div class="icon">
+            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-lock" style="color: #ffffff;"></i>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

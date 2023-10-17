@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown Model</title>
+
+    <style>
+        body{
+            background-color: #080101d5;
+            font-family: Arial, sans-serif;
+            font-size: 130%;
+            font-weight: lighter;
+          
+        }
+
+        .container{
+            background-color: red;
+    
+            width: 1800px;
+    
+            height: 70px;
+    
+            color: white;
+    
+            margin-top: 20px;
+    
+            position: relative;
+    
+            margin: auto;
+    
+            display: flex;
+    
+            padding-top: 11px;
+
+        }
+            
+        
+            
+
+        .top1{
+            color: aliceblue;
+            padding: 2%;
+            font-size: larger;
+           
+        }    
+
+        .top1:hover{
+            background-color: red;
+        }
+
+    
+    ul {
+    
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: red;
+    }
+
+    li {
+      display: inline-block;
+      position: relative;
+      padding: 10px 20px;
+      background-color: red;
+    }
+
+    
+    ul ul {
+        
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 100%;
+      left: 0;
+      
+    }
+
+    li:hover > ul {
+      display: block;
+    }
+
+    .container li.tutorials:hover {
+      background-color: black;
+      padding-right: 56px;
+      
+    }
+
+    .container li.tutorials li ul li {
+      white-space: nowrap;
+    }
+
+
+
+    li li ul {
+    right: auto;
+    left: 100%;
+    top: 0%;
+    width: 170px;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <ul class="container">
+        <li>Home</li>
+        <li>WordPress
+          <ul>
+            <li>Themes</li>
+            <li>Plugins</li>
+            <li class="tutorials">Tutorials
+              <ul>
+                <li>Stuff</li>
+                <li>Things</li>
+                <li>Other Stuff</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Graphics Design</li>
+        <li>Inspiration</li>
+        <li>Contact</li>
+        <li>About</li>
+      </ul>
+</body>
+</html>
